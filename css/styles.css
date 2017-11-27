@@ -1,0 +1,11 @@
+*{box-sizing: border-box;}
+
+body {
+  background: #8B0000;
+  color: #FFF;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  color: #000080;
+}
