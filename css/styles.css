@@ -4,8 +4,74 @@ body {
   background: #B22222;
   color: #FFF;
   font-family: 'Raleway', sans-serif;
+  margin: auto;
 }
 
 h1, h2, h3, h4 {
   color: #000080;
+  font-family: 'Ovo', serif;
+}
+
+#header {
+  background-image: url(../images/flag.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-left: 30em;
+  padding-top: 12em;
+  height: 100vh;
+  width: 100vw;
+}
+
+#headerText {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#dance {
+  text-align: center;
+}
+
+#food {
+  text-align: center;
+}
+
+#baseball {
+  text-align: center;
+}
+
+#container {
+  width: 100%;
+  margin: auto;
+}
+
+
+#freedom {
+  border: 3px solid;
+  padding: 0.5em;
+}
+
+#detentions {
+  border: 3px solid;
+  padding: 0.5em;
+}
+
+#prisoners {
+  border: 3px solid;
+  padding: 0.5em;
+}
+
+#travel {
+  border: 3px solid;
+  padding: 0.5em;
+}
+
+#execution {
+  border: 3px solid;
+  padding: 0.5em;
+}
+
+#text {
+  padding: 1em;
 }
