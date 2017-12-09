@@ -119,7 +119,7 @@ Highcharts.chart('agegraph', {
     },
     series: [{
         name: 'Male',
-        data: [95870, 706882, 2490483, 640150, 763058]
+        data: [950870, 706882, 2490483, 640150, 763058]
 
     }, {
         name: 'Female',
@@ -127,3 +127,57 @@ Highcharts.chart('agegraph', {
 
     }]
 });
+
+function myFunction() {
+    var x = document.getElementById("culture");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function myFunction() {
+    var x = document.getElementById("freedom");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function myFunction() {
+    var x = document.getElementById("detentions");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function myFunction() {
+    var x = document.getElementById("prisoners");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function myFunction() {
+    var x = document.getElementById("travel");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function myFunction() {
+    var x = document.getElementById("execution");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}

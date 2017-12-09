@@ -12,6 +12,14 @@ h1, h2, h3, h4 {
   font-family: 'Ovo', serif;
 }
 
+h1 {
+  font-size: 8em;
+}
+
+h2 {
+  padding-right: 2em;
+}
+
 #header {
   background-image: url(../images/flag.jpg);
   background-size: 100%;
@@ -21,6 +29,7 @@ h1, h2, h3, h4 {
   padding-top: 12em;
   height: 100vh;
   width: 100vw;
+  color: #000080;
 }
 
 #headerText {
@@ -29,23 +38,43 @@ h1, h2, h3, h4 {
   right: 0;
 }
 
-#dance {
+span {
+  content: "\2193";
   text-align: center;
 }
 
-#food {
-  text-align: center;
+.main {
+  padding: 1em;
 }
 
-#baseball {
-  text-align: center;
+#history {
+  width: auto;
+  height:100vh;
+  color: #000080;
+  background-color: #FFF;
+  font-size: 1.5em;
+}
+
+#culture {
+  width: auto;
+  height:100vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-column-gap: 250px;
+}
+
+#humanrights {
+  width: auto;
+  height:100vh;
 }
 
 #container {
   width: 100%;
   margin: auto;
 }
-
 
 #freedom {
   border: 3px solid;
@@ -74,4 +103,8 @@ h1, h2, h3, h4 {
 
 #text {
   padding: 1em;
+}
+
+#video {
+  text-align: center;
 }
