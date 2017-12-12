@@ -73,7 +73,7 @@ Highcharts.chart('piechart', {
         }, {
             name: 'Black',
             y: 9.3
-        }]
+        },]
     }]
 });
 
@@ -82,10 +82,10 @@ Highcharts.chart('agegraph', {
         type: 'column'
     },
     title: {
-        text: 'Age Structure'
+        text: 'Age Structure in Cuba'
     },
     subtitle: {
-        text: 'Source: https://www.cia.gov/library/publications/the-world-factbook/geos/cu.html'
+        text: '<a href="https://www.cia.gov/library/publications/the-world-factbook/geos/cu.html">Source: www.cia.gov</a>'
     },
     xAxis: {
         categories: [
@@ -106,7 +106,7 @@ Highcharts.chart('agegraph', {
     tooltip: {
         headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
         pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-            '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
         footerFormat: '</table>',
         shared: true,
         useHTML: true
@@ -124,60 +124,44 @@ Highcharts.chart('agegraph', {
     }, {
         name: 'Female',
         data: [896476, 655446, 2462250, 679603, 902189]
-
     }]
 });
 
-function myFunction() {
-    var x = document.getElementById("culture");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
+function hideAll() {
+  $('#freedomText').hide();
+  $('#detentionsText').hide();
+  $('#prisonersText').hide();
+  $('#travelText').hide();
+  $('#executionText').hide();
 }
 
-function myFunction() {
-    var x = document.getElementById("freedom");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
+// run that function right away
+hideAll();
 
-function myFunction() {
-    var x = document.getElementById("detentions");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
+  $('#freedomText').show();
+  $('#detentionsText').show();
+  $('#prisonersText').show();
+  $('#travelText').show();
+  $('#executionText').show();
 
-function myFunction() {
-    var x = document.getElementById("prisoners");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
+hideAll();
 
-function myFunction() {
-    var x = document.getElementById("travel");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
+  $('#freedombutton').click(function() {
+    $('#freedomText').show();
+  });
 
-function myFunction() {
-    var x = document.getElementById("execution");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
+  $('#detentionsbutton').click(function() {
+    $('#detentionsText').show();
+  });
+
+  $('#prisonersbutton').click(function() {
+    $('#prisonersText').show();
+  });
+
+  $('#travelbutton').click(function() {
+    $('#travelText').show();
+  });
+
+  $('#executionbutton').click(function() {
+    $('#executionText').show();
+  });
